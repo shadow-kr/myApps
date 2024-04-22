@@ -131,7 +131,9 @@ def load_file():
     print("---------->newww : ",quest_dict)
     return   quest_dict
 
-
+def cross_off_item():
+    listbox.itemconfig(listbox.curselection(), bg="#3dad3f")
+    listbox.selection_clear(0, tk.END)
     
 #---------------------------------------------------------->Button
 
@@ -142,6 +144,10 @@ button_add_quest = tk.Button(sidebar_frame, text="add quest", command=add_quest,
 button_add_quest_objectif = tk.Button(sidebar_frame, text="add quest objective", command=add_quest_objectif, bg="#4CBB17", font=("arial", 10, "bold"))
 
 button_show = tk.Button(sidebar_frame, text="Show Content", command=show_variable_content, bg="#63C5DA", font=("arial", 10, "bold"))
+cross_off_button = tk.Button(sidebar_frame, text="Cross Off Item", command=cross_off_item, bg="#7ADF20", font=("arial", 10, "bold"))
+
+
+
 
 remove_button = tk.Button(sidebar_frame, text="Remove Task", command=remove_task, bg="#ED2939", font=("arial", 10, "bold"))
 
@@ -150,7 +156,11 @@ button_load = tk.Button(sidebar_frame, text="load from file", command=load_file,
 
 
 
-button_show.pack(anchor=tk.W, padx=15, pady=5, ipadx=40, fill='x')
+
+
+# button_show.pack(anchor=tk.W, padx=15, pady=5, ipadx=40, fill='x')
+button_show.pack( padx=15, pady=5, ipadx=10)
+cross_off_button.pack(padx=15, ipadx=10)
 
 text_my_entry.pack(pady=10)
 
