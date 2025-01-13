@@ -1,0 +1,96 @@
+/* Modern Styles - styles.css */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Modern spacing between tasks */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------------------------------------------*/
+/*this is the item in the list*/
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px; /* Add inner padding for better touchpoints */
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Subtle border for item differentiation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 600px;
+    margin-bottom: 5px;  /* pour ajouter un espace entre les lignes */
+}
+
+.task-item:hover {
+    transform: translateY(-2px); /* Subtle lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------------------------------------------*/
+
+.task-text {
+    flex-grow: 1;
+    font-size: 16px; /* Larger font size for readability */
+    color: #333; /* Darker text for contrast */
+}
+
+/*----------------------------------------------------------------------------*/
+
+.add-task-button {
+    padding: 10px 15px; /* Comfortable padding for better touch */
+    font-size: 16px; /* Modern font size */
+    font-weight: bold; /* Emphasize the button */
+    color: #ffffff; /* White text for contrast */
+    background-color: #4CAF50; /* Green button for positive action */
+    border: none; /* Remove default borders */
+    border-radius: 6px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+}
+
+.add-task-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.add-task-button:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: translateY(0); /* Return to normal position */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+}
+
+.add-task-button:focus {
+    outline: 2px solid #a5d6a7; /* Accessible focus ring */
+}
+
+/*----------------------------------------------------------------------------*/
+
+.delete-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ff4d4d; /* Eye-catching delete button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: -50px; /* Adjust spacing dynamically */
+}
+
+.delete-button:hover {
+    background-color: #e04343; /* Slightly darker red on hover */
+}
+
+.delete-button:focus {
+    outline: 2px solid #ffb3b3; /* Accessible focus ring */
+}
+
