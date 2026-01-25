@@ -9,11 +9,11 @@ creer les dossier
 """
 
 #source
-path_image          = "C:/Users/toshiba/Pictures/Screenshots/Sceenshots 25-26/"
+path_image          = "C:/Pictures/Screenshots/Sceenshots 25-26/"
 
 #destination
-path_ma_capture     = "C:/Users/toshiba/Pictures/Screenshots/Screen voulu/"
-path_non_voulu      = "C:/Users/toshiba/Pictures/Screenshots/Screen non voulu/"
+path_ma_capture     = "C:/Pictures/Screenshots/Screen voulu/"
+path_non_voulu      = "C:/Pictures/Screenshots/Screen non voulu/"
 
 
 def cuting(file_path,filename):
